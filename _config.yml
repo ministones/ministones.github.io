@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise", "default"
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
@@ -60,7 +60,7 @@ plugins:
 
 author:
   name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/profile.png"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     # - label: "Website"
@@ -77,14 +77,17 @@ author:
     #   url: "https://instagram.com/"
     - label: "Lecture Notes"
       #icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "/lecture-notes/"
     - label: "Archives"
-      url: "_site/about/index.html"
+      url: "/posts/"
     - label: "Categories"
-      url: "https://github.com/"
+      url: "/categories/"
+    - label: "Tags"
+      # icon: "fab fa-fw fa-instagram"
+      url: "/tags/"
     - label: "Contact Me"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      # icon: "fab fa-fw fa-instagram"
+      url: "/contact-me/"
 
 footer:
   links:
@@ -97,6 +100,11 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
   # _posts
